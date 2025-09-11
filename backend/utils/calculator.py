@@ -30,3 +30,9 @@ def calculate_total(data: dict) -> dict:
         "waste": waste,
         "total": total
     }
+from fastapi import HTTPException
+
+def calculate_transport(distance_km: float, mode: str) -> float:
+    if mode not in FACTORS["transport"]:
+        raise HTTPException(status_code=400, detail=f"Invalid transport mode: {mode}")
+    return distance_km * FACTORS["transport"][mode]
