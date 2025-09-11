@@ -1,0 +1,18 @@
+{
+  "transport": {
+    "car": 0.21,
+    "bike": 0.1,
+    "bus": 0.05
+  },
+  "energy": {
+    "electricity": 0.92
+  },
+  "food": {
+    "vegetarian": 1.7,
+    "non_vegetarian": 3.9
+  },
+  "waste": {
+    "general": 0.45
+  }
+}
+
