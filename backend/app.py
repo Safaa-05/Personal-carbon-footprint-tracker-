@@ -33,3 +33,25 @@ app.add_middleware(
     allow_headers=["*"],
 )
 from utils.calculator import calculate_total
+# backend/app.py
+from fastapi import FastAPI
+from auth import auth_router
+from utils.calculator import calculate_total
+from pydantic import BaseModel
+
+app = FastAPI()
+
+# include auth routes
+app.include_router(auth_router)
+
+class InputData(BaseModel):
+    transport_km: float
+    mode: str
+    energy_kwh: float
+    days: int
+    food_type: str
+    waste_kg: float
+
+@app.post("/calculate")
+def calculate(data: InputData):
+    return calculate_total(data.dict())
