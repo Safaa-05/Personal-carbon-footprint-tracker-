@@ -1,21 +1,33 @@
 {
-  "transport": {
-    "car": 0.21,
-    "bus": 0.10,
-    "train": 0.05,
-    "flight": 0.25
-  },
   "energy": {
-    "electricity": 0.85
+    "electricity": 0.70,
+    "renewable": 0.05
+  },
+  "cooking": {
+    "lpg": 1.50,
+    "electricity": 0.70
+  },
+  "fuels": {
+    "petrol": 2.31,
+    "diesel": 2.70
+  },
+  "transport": {
+    "bus": 0.10,
+    "train": 0.05
   },
   "food": {
-    "vegan": 2.0,
-    "vegetarian": 3.0,
-    "omnivore": 7.0
+    "diet_baseline": {
+      "vegan": 1500,
+      "vegetarian": 1700,
+      "non_vegetarian": 2500
+    },
+    "waste": 2.50
   },
   "waste": {
-    "general": 1.9
+    "segregated": 0.05,
+    "landfill": 0.50
   }
 }
+
 
 
