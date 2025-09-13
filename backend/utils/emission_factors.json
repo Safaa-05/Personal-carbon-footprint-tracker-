@@ -1,0 +1,35 @@
+{
+  "energy": {
+    "electricity": 0.92,
+    "renewable": 0.05
+  },
+  "cooking": {
+    "lpg": 2.9,
+    "png": 2.1,
+    "biogas": 0.1
+  },
+  "transport": {
+    "bus": 0.05,
+    "train": 0.03,
+    "flight": 0.18
+  },
+  "fuels": {
+    "petrol": 2.31,
+    "diesel": 2.68,
+    "cng": 2.75
+  },
+  "food": {
+    "diet_baseline": {
+      "vegetarian": 1.5,
+      "non_vegetarian": 2.5,
+      "vegan": 1.0
+    },
+    "red_meat": 5.0,
+    "waste": 1.2
+  },
+  "waste": {
+    "landfill": 1.0,
+    "compost": 0.2,
+    "recycle": 0.1
+  }
+}
