@@ -1,7 +1,6 @@
 # backend/utils/anonymous_calculator.py
 import json
-
-with open( '../emission_factors.json' ) as f:
+with open( r'C:\Users\ADMIN\Personal-carbon-footprint-tracker-\backend\utils\emission_factors.json' ) as f:
     FACTORS = json.load(f)
 
 def calculate_electricity(kwh: float, renewable: bool) -> float:
